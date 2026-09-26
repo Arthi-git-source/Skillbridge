@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { html{scroll-behavior:smooth} body{@apply bg-[#FAFAFB] text-slate-800 antialiased} button,a,input,select,textarea{@apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2} }
+@layer components { .card{@apply rounded-3xl border border-slate-200/80 bg-white shadow-soft} .btn{@apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold transition hover:-translate-y-0.5 active:translate-y-0} .btn-primary{@apply btn bg-violet text-white hover:bg-[#5149e6]} .btn-secondary{@apply btn border border-slate-200 bg-white hover:bg-slate-50} .pill{@apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold} .input{@apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm placeholder:text-slate-400} }
