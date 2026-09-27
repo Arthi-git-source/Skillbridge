@@ -1194,10 +1194,10 @@ function PostProblem({
         });
 
       const createdTaskId =
+        response.task_id ||
         response.id ||
         response.data?.id ||
         response.task?.id;
-
       if (!createdTaskId) {
         throw new Error(
           "Task was created but no task ID was returned."
