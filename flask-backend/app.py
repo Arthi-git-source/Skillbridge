@@ -1,6 +1,10 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import mysql.connector
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -14,7 +18,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="12345",
+        password=os.getenv("DB_PASSWORD"),
         database="skillbridge"
     )
 
