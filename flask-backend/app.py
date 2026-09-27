@@ -629,6 +629,22 @@ def create_assignment():
                 "error": "Student not found"
             }), 404
 
+        # Check for duplicate assignment
+        cursor.execute(
+            """
+            SELECT id
+            FROM task_assignments
+            WHERE task_id = %s
+              AND student_id = %s
+            """,
+            (task_id, student_id)
+        )
+
+        if cursor.fetchone():
+            return jsonify({
+                "error": "Student is already assigned to this task"
+            }), 409
+
         # Calculate matching percentage
         cursor.execute(
             """
