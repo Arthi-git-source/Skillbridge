@@ -2,7 +2,7 @@
 
 SkillBridge is a web-based platform that connects students with tasks and projects based on their skills.
 
-The application allows businesses or users to post tasks, stores the task and student information in MySQL, and uses a rule-based matching system to calculate how well a student's skills match the required skills for a task.
+The application allows users to post tasks, stores student and task information in MySQL, and uses a rule-based matching system to calculate how well a student's skills match the required skills for a task.
 
 ## Features
 
@@ -47,21 +47,19 @@ The application allows businesses or users to post tasks, stores the task and st
 ```text
 Skillbridge/
 │
-├── backend/
-│   ├── data/
-│   ├── src/
-│   ├── package.json
-│   └── README.md
+├── backend/                  # Original Express backend
 │
 ├── flask-backend/
-│   └── app.py
+│   ├── app.py                # Flask API server
+│   ├── requirements.txt      # Python dependencies
+│   └── .env.example          # Environment variable template
 │
 ├── src/
-│   ├── api.js
+│   ├── api.js                # Frontend API integration
 │   ├── main.jsx
 │   └── index.css
 │
-├── database.sql
+├── database.sql              # MySQL database schema
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
