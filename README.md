@@ -81,5 +81,3 @@ The project uses rule-based skill matching.
 Matching % = (Matching Skills / Required Skills) × 100
 ```
 
-**Arthi**
-B.Tech – Artificial Intelligence & Data Science
