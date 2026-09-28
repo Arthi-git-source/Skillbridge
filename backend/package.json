@@ -1,8 +1,0 @@
-{
-  "name": "skillbridge-api",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {"dev":"node --watch src/server.js","start":"node src/server.js"},
-  "dependencies": {"express":"^4.21.2"}
-}
