@@ -1,40 +1,23 @@
 # SkillBridge
 
-SkillBridge is a web application that helps connect students with suitable tasks based on their skills.
+SkillBridge is a web application that connects students with tasks based on their skills.
 
 ## Features
 
-* Student registration
+* Student registration through Flask API
 * Student skill management
-* Task creation and management
+* Create, view, update and delete tasks
 * Rule-based skill matching
 * Matching percentage
 * Student-task assignment
 * MySQL data storage
-* React frontend connected with Flask APIs
+* React frontend connected to Flask APIs
 
 ## Tech Stack
 
 * **Frontend:** React.js, Vite, Tailwind CSS
 * **Backend:** Python, Flask
 * **Database:** MySQL
-* **Tools:** Git, GitHub, VS Code, MySQL Workbench
-
-## How It Works
-
-```text
-React Frontend
-      ↓
-  Flask APIs
-      ↓
- MySQL Database
-      ↓
-Skill Matching
-      ↓
-Task Assignment
-```
-
-The matching system compares the skills required for a task with the student's skills and calculates a matching percentage.
 
 ## Project Structure
 
@@ -50,7 +33,6 @@ Skillbridge/
 │   └── index.css
 ├── database.sql
 ├── package.json
-├── vite.config.js
 └── README.md
 ```
 
@@ -88,14 +70,16 @@ npm install
 npm run dev
 ```
 
-The frontend runs on `http://localhost:5173` and the Flask backend runs on `http://localhost:5000`.
+Frontend: `http://localhost:5173`
+Backend: `http://localhost:5000`
 
 ## Matching
 
-The project uses a simple rule-based matching system.
+The project uses rule-based skill matching.
 
 ```text
 Matching % = (Matching Skills / Required Skills) × 100
 ```
 
-
+**Arthi**
+B.Tech – Artificial Intelligence & Data Science
